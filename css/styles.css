@@ -12,6 +12,25 @@ common css
     margin: 0 auto;
 }
 
+.primary-btn{
+    border: none;
+    
+}
+
+.primary-btn a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;  
+    color: #FFFFFF; 
+    padding: 20px 25px;
+    background-color: #FF900E;
+    border-radius: 5px;
+    
+}
+
 
 
 /* =========================
@@ -56,6 +75,42 @@ nav .nav-items ul .nav-item a{
     font-size: 18px;
     color: #424242;  
 }
+/* banner css starsf */
+.banner{
+    padding-top: 122px;
+}
+.banner-items .contants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-items .contants .banner-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+
+}
+.banner-items .contants .discription {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    padding: 0 100px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+}
+.banner-items .contants .primary-btn{
+    margin-bottom: 50px;
+}
+.banner-items .banner-image{
+    padding-bottom: 45px;
+}
+.banner-items .banner-image img{
+    width: 100%;
+}
+
 
 
 /* ==========================================
@@ -65,22 +120,26 @@ media quiry
 ========================================== */
 
 /* mobile device */
-@media only screen and (max-width: 676px){
-
+@media screen and (max-width: 676px){
+    
     .container{
-    width: 100%;
-    margin: 0 auto;
-}
-nav .nav-items{
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav .nav-items{
+        flex-direction: column;
+    padding-top: 20px;
+    }
+    nav .nav-items ul{
     flex-direction: column;
-}
-nav .nav-items ul{
-    flex-direction: column;
-}
-nav .nav-items ul .nav-item{
+    }
+    nav .nav-items ul .nav-item{
     list-style: none;
     margin-right: 0px;
-}
+    }
+    .banner-items .contants .discription {
+        padding: 0 20px;
+    
+    }
 
-
-}
+} 
