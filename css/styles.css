@@ -454,7 +454,7 @@ media quiry
         margin: 0 20px;
     }
     /* features's media */
-    .sponspors-items .discriptions{
+    .sponsporsitems .discriptions{
         text-align: center;
         font-weight: 400;
         font-size: 16px;  
@@ -463,7 +463,7 @@ media quiry
         margin-top: 24px;
         margin-bottom: 50px;
     }
-    .sponspors-items .items{
+    .sponsporsitems .items{
         grid-template-columns: repeat(1, .5fr);
         align-items: center;
         justify-content: center;
