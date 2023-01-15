@@ -154,6 +154,68 @@ nav .nav-items ul .nav-item a{
     color: #727272;
     margin-bottom: 32px; 
 }
+/* features css starts */
+.features{
+    margin-top: 146px;
+}
+.features-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 146px;
+    margin-top: 146px;
+}
+.features-items .contants .heading{
+    font-weight: 700;
+    font-size: 45px;    
+    color: #131313;
+    padding-left: 21px;
+    padding-right: 50px;
+    border-left:5px solid #FF900E ;
+}
+.features-items .contants .discriptions{   
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 24px;
+}
+.features-items .contants .items{
+    padding: 30px 0 30px 15px;
+    margin-top: 10px;
+}
+.features-items .contants .items .item{
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px #727272;
+}
+.features-items .contants .items .item .s-heading{
+    font-weight: 600;
+    font-size: 20px; 
+    color: #131313;   
+}
+.features-items .contants .items .item .discriptions{
+    margin-top: 10px;
+}
+.features-items .image img{
+    width: 100%;
+}
+.features-items .image .exp{
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: #FFFFFF; 
+    background-color: #FF900E; 
+    line-height: 30px;  
+    text-transform: capitalize;
+    padding: 45px 32px 35px;
+    border-radius: 5px;
+    margin: -45% -15%;
+}
+.features-items .image .exp .exp2{
+    font-weight: 500;
+    font-size: 22px;    
+}
 
 
 
@@ -194,6 +256,27 @@ media quiry
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
     
+    }
+    .features-items{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 46px;
+    }
+    .features-items .image{
+        margin: 10px;
+    }
+    .features-items .image .exp{
+        display: block;     
+        padding: 45px 32px 35px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .features-items .contants .items{
+        padding: 30px 0 30px 0;
+        margin-top: 20px;
+    }
+    .features-items .contants .items .item{
+        padding: 15px;
+        margin-bottom: 10px;
     }
 
 } 
