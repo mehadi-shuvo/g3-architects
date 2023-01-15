@@ -4,6 +4,83 @@ common css
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
 }
 
 
+
+/* =========================
+header css starts
+========================= */
+
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* nav css starts */
+nav{
+    padding-top: 50px;
+}
+
+nav .nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-items .logo{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+nav .nav-items ul{
+    display: flex;
+    align-items: center;
+}
+nav .nav-items ul .nav-item{
+    list-style: none;
+    margin-right: 75px;
+}
+nav .nav-items ul .nav-item.last{
+    margin-right: 0;
+}
+nav .nav-items ul .nav-item a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;  
+}
+
+
+/* ==========================================
+=============================================
+media quiry
+============================================
+========================================== */
+
+/* mobile device */
+@media only screen and (max-width: 676px){
+
+    .container{
+    width: 100%;
+    margin: 0 auto;
+}
+nav .nav-items{
+    flex-direction: column;
+}
+nav .nav-items ul{
+    flex-direction: column;
+}
+nav .nav-items ul .nav-item{
+    list-style: none;
+    margin-right: 0px;
+}
+
+
+}
