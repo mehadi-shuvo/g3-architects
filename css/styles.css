@@ -321,18 +321,18 @@ nav .nav-items ul .nav-item a{
 }
 
 /* sponsors css strats */
-.sponspors-items{
+.sponsporsitems{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.sponspors-items .heading{
+.sponsporsitems .heading{
     font-weight: 700;
     font-size: 45px; 
     color: #131313;   
     text-transform: capitalize;
     text-align: center;
 }
-.sponspors-items .discriptions{
+.sponsporsitems .discriptions{
     text-align: center;
     font-weight: 400;
     font-size: 16px;  
@@ -342,7 +342,7 @@ nav .nav-items ul .nav-item a{
     margin-bottom: 50px;
 }
 
-.sponspors-items .items{
+.sponsporsitems .items{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
@@ -376,6 +376,7 @@ media quiry
         width: 100%;
         margin: 0 auto;
     }
+    /* nav bar's media */
     nav .nav-items{
         flex-direction: column;
     padding-top: 20px;
@@ -387,10 +388,12 @@ media quiry
     list-style: none;
     margin-right: 0px;
     }
+     /* banner's media */
     .banner-items .contants .discription {
         padding: 0 20px;
     
     }
+    /* about's media */
     .about-items{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 70px;
@@ -401,9 +404,22 @@ media quiry
         gap: 24px;
     
     }
+    /* facts's media */
     .facts-items .heading{
         padding-left: 20px;
     }
+    .facts-items .discription{
+        padding-left: 20px; 
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    .facts-items .items{
+        grid-template-columns: repeat(1, .75fr);
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+    /* features's media */
     .features-items{
         grid-template-columns: repeat(1, 1fr);
         gap: 46px;
@@ -425,17 +441,7 @@ media quiry
         padding: 15px;
         margin-bottom: 10px;
     }
-    .facts-items .discription{
-        padding-left: 20px; 
-        padding-right: 0;
-        margin-bottom: 50px;
-    }
-    .facts-items .items{
-        grid-template-columns: repeat(1, .75fr);
-        gap: 24px;
-        align-items: center;
-        justify-content: center;
-    }
+    /* previous's media */
     .previous-items .heading{
         padding-left: 20px;
     }
@@ -447,6 +453,7 @@ media quiry
         grid-template-columns: repeat(1, 1fr);
         margin: 0 20px;
     }
+    /* features's media */
     .sponspors-items .discriptions{
         text-align: center;
         font-weight: 400;
