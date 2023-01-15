@@ -216,7 +216,151 @@ nav .nav-items ul .nav-item a{
     font-weight: 500;
     font-size: 22px;    
 }
+/* facts css starts */
+.facts-items{
+    margin-top: 124px;
+}
+.facts-items .heading{
+    font-weight: 700;
+    font-size: 45px; 
+    color: #131313;   
+    text-transform: capitalize;
+}
+.facts-items .discription{
+    font-weight: 400;
+    font-size: 16px;  
+    color: #727272; 
+    padding-right: 500px; 
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+.facts-items .items{
+    display: grid;
+    grid-template-columns: repeat(4, .75fr);
+    gap: 54px;
+}
 
+.facts-items .items .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 25px;
+    border: 1px solid 
+    #FF900E;
+    border-radius: 5px;
+    
+}
+.facts-items .items .item:hover{
+    background-color: #FF900E;
+    transition: all linear .4s;
+}
+.facts-items .items .item .number{
+    font-weight: 600;
+    font-size: 45px; 
+    color: #424242;  
+    margin-top: 5px;
+    margin-bottom: 10px; 
+}
+.facts-items .items .item .title{
+    font-weight: 600;
+    font-size: 20px; 
+    color: #727272;
+    text-transform: capitalize;   
+}
+.facts-items .items .item:hover .title, .facts-items .items .item:hover .number{
+    color: #FFFFFF;
+    transition: all linear 0.4s;
+}
+/* previous work css starts */
+.previous-items{
+    margin-top: 100px;
+}
+.previous-items .heading{
+    font-weight: 700;
+    font-size: 45px; 
+    color: #131313;   
+    text-transform: capitalize;
+}
+
+.previous-items .discriptions{
+    font-weight: 400;
+    font-size: 16px;  
+    color: #727272; 
+    padding-right: 400px;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.previous-items .items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.previous-items .items .item{
+    padding: 30px;
+    border-radius: 5px;
+    border: .5px solid #FF900E;
+}
+.previous-items .items .item img{
+    border-radius: 5px;
+    width: 100%;
+}
+.previous-items .items .item .s-heading{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 35px; 
+    color: #131313;   
+    text-transform: capitalize;
+}
+.previous-items .items .item p{
+    font-weight: 400;
+    font-size: 16px;  
+    color: #727272; 
+    margin-bottom: 20px;
+}
+
+/* sponsors css strats */
+.sponspors-items{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.sponspors-items .heading{
+    font-weight: 700;
+    font-size: 45px; 
+    color: #131313;   
+    text-transform: capitalize;
+    text-align: center;
+}
+.sponspors-items .discriptions{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;  
+    color: #727272; 
+    padding: 0 271px; 
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.sponspors-items .items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+/* footers css starts */
+.s-footer{
+    background-color: rgba(255, 144, 14, 0.1);
+    border-radius: 5px;
+
+}
+.s-footer p{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #424242;
+    padding: 40px 0;
+}
 
 
 /* ==========================================
@@ -257,6 +401,9 @@ media quiry
         gap: 24px;
     
     }
+    .facts-items .heading{
+        padding-left: 20px;
+    }
     .features-items{
         grid-template-columns: repeat(1, 1fr);
         gap: 46px;
@@ -277,6 +424,43 @@ media quiry
     .features-items .contants .items .item{
         padding: 15px;
         margin-bottom: 10px;
+    }
+    .facts-items .discription{
+        padding-left: 20px; 
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    .facts-items .items{
+        grid-template-columns: repeat(1, .75fr);
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+    .previous-items .heading{
+        padding-left: 20px;
+    }
+    .previous-items .discriptions{
+        padding-left: 20px;
+        padding-right:0px;
+    }
+    .previous-items .items{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 20px;
+    }
+    .sponspors-items .discriptions{
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;  
+        color: #727272; 
+        padding: 0 20px; 
+        margin-top: 24px;
+        margin-bottom: 50px;
+    }
+    .sponspors-items .items{
+        grid-template-columns: repeat(1, .5fr);
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
     }
 
 } 
